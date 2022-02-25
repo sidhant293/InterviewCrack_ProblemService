@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class ProblemsDTO {
 
 	private List<ProblemDTO> problems;
-	private TokenDTO token;
+	private TokenRequestDTO token;
 }
