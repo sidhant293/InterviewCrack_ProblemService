@@ -12,7 +12,6 @@ public class ProblemController {
 	
 	@GetMapping("/all")
 	public ProblemsDTO getProblems() {
-		System.out.println("getProblems all");
 		return null;
 	}
 }

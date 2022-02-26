@@ -12,7 +12,6 @@ public class Test {
 
 	@GetMapping("/test")
 	public String testFucntion(@RequestHeader(value="Authorization") String token) {
-		System.out.println("getProblems called");
 		return "ACTIVE";
 	}
 	
