@@ -18,7 +18,7 @@ CREATE TABLE problem_tags(
 			REFERENCES tags(tag_id)
 );
 
-
+-- ############################ ARRAYS ####################################
 insert into problems (problem_id,problem_name,problem_difficulty) values (1,'sort-array-of-0s-1s-2s','easy');
 insert into problem_tags(problem_id,tag_id) values (1,1);
 insert into problem_tags(problem_id,tag_id) values (1,5);
