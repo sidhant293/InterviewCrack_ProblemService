@@ -20,8 +20,8 @@ CREATE TABLE problem_tags(
 
 
 insert into problems (problem_id,problem_name,problem_difficulty) values (1,'sort-array-of-0s-1s-2s','easy');
-insert into problem_tags(problem_id,tag_id) values (1,5);
 insert into problem_tags(problem_id,tag_id) values (1,1);
+insert into problem_tags(problem_id,tag_id) values (1,5);
 
 insert into problems (problem_id,problem_name,problem_difficulty) values (2,'move-negative-elements','easy');
 insert into problem_tags(problem_id,tag_id) values (2,1);
@@ -33,19 +33,41 @@ insert into problems (problem_id,problem_name,problem_difficulty) values (4,'rot
 insert into problem_tags(problem_id,tag_id) values (4,1);
 -- ---------------
 insert into problems (problem_id,problem_name,problem_difficulty) values (5,'largest-sum-contiguous-subarray','easy');
-insert into problem_tags(problem_id,tag_id) values (4,1);
-insert into problem_tags(problem_id,tag_id) values (4,18);
+insert into problem_tags(problem_id,tag_id) values (5,1);
+insert into problem_tags(problem_id,tag_id) values (5,18);
 
 insert into problems (problem_id,problem_name,problem_difficulty) values (6,'minimum-jumps-to-reach-end','medium');
+insert into problem_tags(problem_id,tag_id) values (6,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (7,'first-missing-positive-number','hard');
+insert into problem_tags(problem_id,tag_id) values (7,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (8,'duplicate-integer-in-array','medium');
-insert into problems (problem_id,problem_name,problem_difficulty) values (9,'merge-sorted-arrays','medium');
+insert into problem_tags(problem_id,tag_id) values (8,1);
+
+insert into problems (problem_id,problem_name,problem_difficulty) values (9,'merge-two-sorted-arrays','hard');
+insert into problem_tags(problem_id,tag_id) values (9,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (10,'merge-intervals','medium');
+insert into problem_tags(problem_id,tag_id) values (10,1);
+insert into problem_tags(problem_id,tag_id) values (10,5);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (11,'next-permutation','medium');
+insert into problem_tags(problem_id,tag_id) values (11,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (12,'count-inversion','medium');
+insert into problem_tags(problem_id,tag_id) values (12,1);
+insert into problem_tags(problem_id,tag_id) values (12,5);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (13,'best-time-to-buy-and-sell-stock','easy');
+insert into problem_tags(problem_id,tag_id) values (13,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (14,'pair-sum','easy');
+insert into problem_tags(problem_id,tag_id) values (14,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (15,'common-elements-in-three-sorted-arrays','medium');
+insert into problem_tags(problem_id,tag_id) values (15,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (16,'rearrange-alternating-array','medium');
 insert into problems (problem_id,problem_name,problem_difficulty) values (17,'subarray-sum-zero','medium');
 insert into problems (problem_id,problem_name,problem_difficulty) values (18,'maximum-product-subarray','medium');
