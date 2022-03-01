@@ -32,6 +32,6 @@ insert into problem_tags(problem_id,tag_id) values (3,1);
 insert into problems (problem_id,problem_name,problem_difficulty) values (4,'rotate-array-k-times','medium');
 insert into problem_tags(problem_id,tag_id) values (4,1);
 -- ---------------
-insert into problems (problem_id,problem_name,problem_difficulty) values (4,'largest-sum-contiguous-subarray','easy');
+insert into problems (problem_id,problem_name,problem_difficulty) values (5,'largest-sum-contiguous-subarray','easy');
 insert into problem_tags(problem_id,tag_id) values (4,1);
 insert into problem_tags(problem_id,tag_id) values (4,18);
