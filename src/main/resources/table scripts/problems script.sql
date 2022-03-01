@@ -69,17 +69,49 @@ insert into problems (problem_id,problem_name,problem_difficulty) values (15,'co
 insert into problem_tags(problem_id,tag_id) values (15,1);
 
 insert into problems (problem_id,problem_name,problem_difficulty) values (16,'rearrange-alternating-array','medium');
+insert into problem_tags(problem_id,tag_id) values (16,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (17,'subarray-sum-zero','medium');
+insert into problem_tags(problem_id,tag_id) values (17,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (18,'maximum-product-subarray','medium');
+insert into problem_tags(problem_id,tag_id) values (18,1);
+insert into problem_tags(problem_id,tag_id) values (18,18);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (19,'longest-coinsecutive-subsequence','medium');
+insert into problem_tags(problem_id,tag_id) values (19,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (20,'array-subset','easy');
+insert into problem_tags(problem_id,tag_id) values (20,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (21,'triplet-sum','medium');
+insert into problem_tags(problem_id,tag_id) values (21,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (22,'trapping-rain-water','medium');
+insert into problem_tags(problem_id,tag_id) values (22,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (23,'chocolate-distribution','easy');
+insert into problem_tags(problem_id,tag_id) values (23,1);
+insert into problem_tags(problem_id,tag_id) values (23,5);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (24,'subarrays-divisible-by-k','medium');
+insert into problem_tags(problem_id,tag_id) values (24,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (25,'three-way-partitioning','easy');
+insert into problem_tags(problem_id,tag_id) values (25,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (26,'shuffle-array','medium');
+insert into problem_tags(problem_id,tag_id) values (26,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (27,'minimum-swaps-required-bring-elements-less-than-equal-k-together','medium');
+insert into problem_tags(problem_id,tag_id) values (27,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (28,'median-of-two-sorted-arrays','hard');
+insert into problem_tags(problem_id,tag_id) values (28,1);
+insert into problem_tags(problem_id,tag_id) values (28,4);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (29,'subarray-product-less-than-k','medium');
+insert into problem_tags(problem_id,tag_id) values (29,1);
+
 insert into problems (problem_id,problem_name,problem_difficulty) values (30,'insert-delete-get-random-o(1)','medium');
+insert into problem_tags(problem_id,tag_id) values (30,1);
