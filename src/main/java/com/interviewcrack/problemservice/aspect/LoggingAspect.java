@@ -17,22 +17,30 @@ public class LoggingAspect {
 	
 	@Before(value = "execution(* com.interviewcrack.problemservice.secure.api.*.*(..)) || "
 			+ "execution(* com.interviewcrack.problemservice.insecure.api.*.*(..)) || "
-			+ "execution(* com.interviewcrack.problemservice.proxy.*.*(..))")
+			+ "execution(* com.interviewcrack.problemservice.proxy.*.*(..)) || "
+			+ "execution(* com.interviewcrack.problemservice.service.*.*(..)) || "
+			+ "execution(* com.interviewcrack.problemservice.serviceimpl.*.*(..))")
 	public void beforeFunction(JoinPoint joinPoint) {
-		LOGGER.info("About to execute "+joinPoint.getSignature().getName());
+		LOGGER.info("About to execute "+joinPoint.getSignature().getDeclaringTypeName()+" "+joinPoint.getSignature().getName());
 	}
 	
 	@After(value = "execution(* com.interviewcrack.problemservice.secure.api.*.*(..)) || "
 			+ "execution(* com.interviewcrack.problemservice.insecure.api.*.*(..)) || "
-			+ "execution(* com.interviewcrack.problemservice.proxy.*.*(..))")
+			+ "execution(* com.interviewcrack.problemservice.proxy.*.*(..)) || "
+			+ "execution(* com.interviewcrack.problemservice.service.*.*(..)) || "
+			+ "execution(* com.interviewcrack.problemservice.serviceimpl.*.*(..))")
 	public void afterFunction(JoinPoint joinPoint) {
-		LOGGER.info("Execution finished of "+joinPoint.getSignature().getName());
+		LOGGER.info("Execution finished of "+joinPoint.getSignature().getDeclaringTypeName()+" "+joinPoint.getSignature().getName());
 	}
 	
 	@AfterThrowing(pointcut = "execution(* com.interviewcrack.problemservice.secure.api.*.*(..)) || "
 			+ "execution(* com.interviewcrack.problemservice.insecure.api.*.*(..)) || "
-			+ "execution(* com.interviewcrack.problemservice.proxy.*.*(..))",throwing = "exception")
+			+ "execution(* com.interviewcrack.problemservice.proxy.*.*(..)) || "
+			+ "execution(* com.interviewcrack.problemservice.service.*.*(..)) || "
+			+ "execution(* com.interviewcrack.problemservice.serviceimpl.*.*(..))",throwing = "exception")
 	public void afterException(JoinPoint joinPoint, Exception exception) {
-		LOGGER.error("Exception in method: "+joinPoint.getSignature().getName()+" Message: "+exception.getMessage(),exception);
+		LOGGER.error("Exception in method: "+joinPoint.getSignature().getDeclaringTypeName()+" "+
+	joinPoint.getSignature().getName()+" Message: "+exception.getMessage(),exception);
+		
 	}
 }
