@@ -8,6 +8,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.interviewcrack.problemservice.dto.TagDTO;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,4 +26,10 @@ public class Tag {
 	@JsonBackReference
 	@ManyToMany(mappedBy = "tags")    //mappedBy is name of field in problem entity
 	private List<Problem> problems;
+	
+	public TagDTO convertToDTO() {
+		TagDTO dto=new TagDTO();
+		dto.setName(tagName);
+		return dto;
+	}
 }

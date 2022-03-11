@@ -7,6 +7,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class TagDTO {
 
-	private int id;
 	private String name;
 }
