@@ -46,7 +46,6 @@ public class TokenValidator {
 		try {
 			response=tokenProxy.validateAccess(tokenDTO);
 		}catch(Exception e) {
-			System.out.println("Error Message: "+e.getMessage());
 			throw new ProxyException("Proxy Exception Token Invalid");
 		}
 		
