@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.interviewcrack.problemservice.dto.ProblemDTO;
@@ -19,7 +20,8 @@ public class ProblemController {
 	private ProblemService problemService;
 	
 	@GetMapping("/all")
-	public List<ProblemDTO> getAllProblems() throws ProblemServiceException {
-		return problemService.getAllProblems();
+	public List<ProblemDTO> getAllProblems(@RequestParam int pageNo,@RequestParam int pageSize) throws ProblemServiceException {
+		if(pageSize>20) pageSize=20;
+		return problemService.getAllProblems(pageNo,pageSize);
 	}
 }

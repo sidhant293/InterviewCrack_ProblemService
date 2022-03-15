@@ -18,8 +18,8 @@ public class ExceptionControllerAdvice {
 	
 	@ExceptionHandler(ProblemServiceException.class)
 	public ResponseEntity<ErrorInfo> problemServiceException(ProblemServiceException problemServiceException){
-		ErrorInfo error=populateError("Can't do it now", HttpStatus.UNAUTHORIZED.value());
-		return new ResponseEntity<>(error,HttpStatus.UNAUTHORIZED);
+		ErrorInfo error=populateError(problemServiceException.getMessage(), problemServiceException.getErrorStatus().value());
+		return new ResponseEntity<>(error,problemServiceException.getErrorStatus());
 	}
 	
 //	@ExceptionHandler(Exception.class)
